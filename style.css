@@ -1,0 +1,443 @@
+* {
+  box-sizing: border-box;
+}
+body {
+  margin: 0;
+}
+.container {
+  height: 200vh;
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+  grid-template-rows: 1.2fr 1.2fr 1.2fr 0.6fr;
+  grid-auto-columns: 1fr;
+  gap: 0px 0px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    "iphone iphone iphone iphone iphone iphone learn learn learn learn learn learn"
+    "our our our mac mac mac mac mac mac icloud icloud icloud"
+    "games games games Experience Experience Experience Experience Experience Experience icloud icloud icloud"
+    "connect connect connect much much much more-than more-than more-than more-than more-than more-than";
+}
+
+.iphone {
+  /* background-color: burlywood;  */
+  grid-area: iphone;
+}
+
+.learn {
+  background-color: #f7f8f9;
+  grid-area: learn;
+}
+
+.our {
+  background-color: #f05638;
+  grid-area: our;
+  display: flex;
+  flex-flow: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  grid-area: our;
+}
+
+.mac {
+  display: flex;
+  overflow: hidden;
+  grid-area: mac;
+}
+
+.icloud {
+  background-color: #8f76bc;
+  grid-area: icloud;
+}
+
+.games {
+  grid-area: games;
+}
+
+.Experience {
+  background-color: #93b6b7;
+  background-image: url(images/u-x.png);
+  background-position: 50% 100%;
+  background-size: 80%;
+  background-repeat: no-repeat;
+  grid-area: Experience;
+}
+
+.more-than {
+  background-color: #2c2c2c;
+  grid-area: more-than;
+}
+
+.connect {
+  background-color: #38d5f4;
+  grid-area: connect;
+}
+
+.much {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  grid-area: much;
+}
+
+.iphone {
+  display: flex;
+  justify-content: space-around;
+  align-items: end;
+}
+.image-iphone {
+  width: 33%;
+  margin-right: 70px;
+}
+.text-iphone {
+  width: 45%;
+  margin-left: 75px;
+  align-self: center;
+}
+.text-iphone h1 {
+  font-family: cursive;
+  padding-right: 193px;
+  font-size: 22px;
+}
+.text-iphone p {
+  color: rgb(159, 163, 167);
+}
+.text-iphone p:nth-of-type(1) {
+  /* background-color: aqua; */
+  font-size: 12px;
+  font-family: system-ui, -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto,
+    Oxygen, Ubuntu, Cantarell, "Open Sans", "Helvetica Neue", sans-serif;
+  font-weight: 700;
+}
+
+.text-iphone p:nth-of-type(2) {
+  font-size: 14px;
+  font-family: cursive;
+  font-weight: 700;
+  padding-right: 69px;
+}
+
+.image-iphone img {
+  width: 100%;
+}
+
+.learn {
+  text-align: center;
+}
+.learn p {
+  margin-top: 94px;
+  font-size: 12px;
+  font-weight: 700;
+  font-family: system-ui;
+}
+.learn h1 {
+  font-size: 48px;
+  padding: 0 147px;
+  margin: 0;
+  font-family: math;
+}
+.learn a {
+  font-size: 14px;
+  font-weight: 400;
+  color: rgb(39, 185, 194);
+  font-family: sans-serif;
+}
+.text-our {
+  text-align: center;
+  width: 57%;
+}
+.text-our h3 {
+  font-size: 22px;
+  color: white;
+  font-family: monospace;
+}
+.text-our p {
+  color: rgb(255, 200, 10);
+  font-family: monospace;
+  font-size: 12px;
+  font-weight: bolder;
+}
+.img-keybourd {
+  width: 80%;
+}
+.img-keybourd img {
+  width: 100%;
+}
+.part {
+  position: relative;
+  width: 60%;
+}
+
+.tex1-mac {
+  padding-top: 50px;
+}
+.tex1-mac h1 {
+  text-align: left;
+  font-size: 22px;
+  color: rgb(240, 86, 56);
+  padding-right: 241px;
+  margin-left: 63px;
+  font-family: monospace;
+}
+
+.tex1-mac p {
+  font-size: 12px;
+  font-weight: 700;
+  text-align: center;
+  padding-right: 222px;
+  font-family: cursive;
+  color: rgb(159, 163, 167);
+}
+
+.img-mac img {
+  position: absolute;
+  width: 100%;
+  top: 59.8%;
+  left: -51%;
+}
+.part2 {
+  width: 40%;
+}
+.part2 a {
+  font-size: 12px;
+  font-weight: 700;
+  text-decoration: none;
+  color: rgb(39, 185, 194);
+}
+
+.part2 p {
+  font-size: 14px;
+  color: rgb(247, 239, 240);
+  font-family: sans-serif;
+  line-height: 26px;
+  padding-right: 35px;
+  margin-top: 90px;
+}
+
+.main-logo {
+  display: flex;
+  flex-wrap: wrap;
+  background-color: #8166b0;
+  width: 97%;
+  border-radius: 195px;
+  margin: 0 auto;
+  margin-top: 90px;
+}
+.logo {
+  width: 85%;
+}
+.logo img {
+  width: 74%;
+  margin-left: 22%;
+  margin-top: 10px;
+}
+.logo p {
+  width: 21%;
+  text-align: center;
+  margin-left: 48%;
+  color: white;
+  font-family: system-ui;
+}
+.pop img {
+  width: 22%;
+  height: 33%;
+}
+.pop p {
+  margin-left: 5px;
+  font-size: 10px;
+  color: white;
+  font-family: sans-serif;
+}
+.pop {
+  display: flex;
+  width: 25%;
+  justify-content: center;
+  align-items: center;
+  margin-left: 37%;
+  background-color: rgba(0, 0, 0, 0.255);
+  padding: 5px 16px;
+  border-radius: 28px;
+  margin-top: 31px;
+}
+.text-icloud {
+  text-align: center;
+  padding: 0 50px;
+}
+.text-icloud h1 {
+  color: white;
+  font-family: cursive;
+}
+
+.text-icloud p {
+  font-size: 14px;
+  color: white;
+  font-family: cursive;
+  margin-bottom: 56px;
+}
+
+.text-icloud a {
+  padding: 16px;
+  background-color: #ffc80a;
+  /* margin-top: 23px; */
+  border-radius: 28px;
+  font-size: 14px;
+  text-decoration: none;
+  font-family: sans-serif;
+}
+.logo-games {
+  width: 70%;
+  margin-right: 46px;
+}
+.logo-games img {
+  width: 100%;
+}
+.games {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  text-align: center;
+}
+.text-games h2 {
+  color: rgb(0, 0, 0);
+  font-family: sans-serif;
+}
+.text-games a {
+  color: rgb(39, 185, 194);
+  font-size: 12px;
+  font-family: sans-serif;
+  text-decoration: none;
+}
+.container-con {
+  position: absolute;
+  width: 67%;
+  padding: 57px 20px;
+  border-radius: 121px;
+  text-align: center;
+  background-color: #35cfed;
+}
+.container-con img {
+  width: 27%;
+}
+.container-con h2 {
+  color: white;
+  font-size: 22px;
+  font-family: monospace;
+}
+.connect {
+  position: relative;
+  display: flex;
+  overflow: hidden;
+  flex-wrap: wrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.container-much {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  text-align: center;
+}
+.container-much p {
+  background-color: #7bc424;
+  padding: 7px;
+  font-size: 10px;
+  width: 20%;
+  border-radius: 18px;
+}
+.container-much h1 {
+  margin: 0;
+  font-family: math;
+}
+.img-tele {
+  width: 30%;
+}
+.img-tele img {
+  width: 100%;
+}
+.text-tele h1 {
+  color: #fff;
+  font-size: 22px;
+  padding-right: 91px;
+  font-family: monospace;
+}
+.text-tele {
+  width: 40%;
+}
+.more-c {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.con-ex {
+  position: relative;
+}
+.img-ex {
+  width: 50%;
+}
+.img-ipad {
+  position: absolute;
+  width: 95%;
+  top: 158%;
+  left: -10%;
+}
+.img-ipad img {
+  width: 100%;
+}
+.best p {
+  width: 12%;
+  padding: 1px 16px;
+  background-color: #fa684f;
+  font-size: 8px;
+  color: white;
+  border-radius: 21px;
+  margin: 2% 9%;
+  text-align: center;
+}
+.text-ex h1 {
+  text-align: center;
+  font-size: 22px;
+  color: white;
+  font-weight: 700;
+  font-family: system-ui;
+  padding: 0 30%;
+}
+
+/* Small devices such as large phones (640px and up) */
+@media only screen and (max-width: 640px) {
+  .container {
+    height: 200vh;
+    display: grid;
+    grid-template-areas:
+      "iphone"
+      "learn"
+      "our"
+      "mac"
+      "icloud"
+      "games"
+      "Experience"
+      "connect"
+      "much"
+      "more-than";
+  }
+}
+
+/* Medium devices such as tablets (768px and up)
+@media only screen and (min-width: 768px) {
+  ...;
+}
+
+/* Large devices such as laptops (1024px and up) 
+@media only screen and (min-width: 1024px) {
+  ...;
+}
+*/
+/* Largest devices such as desktops (1280px and up) 
+@media only screen and (min-width: 1280px) {
+  ...;
+} 
+*/
